@@ -769,6 +769,18 @@ h3.my-profession{
     align-content: center;
 }
 
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--text-black-700);
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: var(--skin-color);
+}
 @media(max-width: 1199px){
     .section .container{
         padding-top: 70px;
