@@ -81,3 +81,4 @@ const nav = document.querySelector(".nav"),
         function addBackSection(num){
             allSection[num].classList.add("back-section");
         }
+

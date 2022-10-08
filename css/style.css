@@ -781,6 +781,61 @@ h3.my-profession{
 ::-webkit-scrollbar-thumb:hover{
     background: var(--skin-color);
 }
+
+.loader{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--skin-color);
+}
+
+.loader .loader-inner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    transform: translate(-50%, -50%);
+}
+.loader span{
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
+    animation: loading 2s ease infinite;
+}
+
+.loader span:nth-child(1){
+    background: #32c8f7;
+    animation-delay: .5s;
+}
+.loader span:nth-child(2){
+    background: #eebb4d;
+    animation-delay: 1s;
+}
+.loader span:nth-child(3){
+    background: #85db97;
+    animation-delay: 1.5s;
+}
+.loader span:nth-child(4){
+    background: #a99dc5;
+    animation-delay: 2s;
+}
+
+@keyframes loading {
+    0%, 100%{
+        transform: translate(0);
+    }
+    25%{
+        transform: translate(80px);
+    }
+    50%{
+        transform: translate(80px, 80px);
+    }
+    75%{
+        transform: translate(0, 80px);
+    }
+}
 @media(max-width: 1199px){
     .section .container{
         padding-top: 70px;
