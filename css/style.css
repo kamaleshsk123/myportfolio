@@ -836,6 +836,15 @@ h3.my-profession{
         transform: translate(0, 80px);
     }
 }
+
+.loader.fadeOut {
+    animation: fadeOut 1s alternate;
+}
+@keyframes fadeOut{
+    to{
+        opacity: 0;
+    }
+}
 @media(max-width: 1199px){
     .section .container{
         padding-top: 70px;
