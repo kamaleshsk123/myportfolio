@@ -99,6 +99,8 @@ ul{
     color: var(--text-black-900);
     font-weight: 700;
     position: relative;
+    text-shadow:  red -2px 0, cyan 2px 0;
+
 }
 
 .section-title h2::before{
@@ -183,6 +185,7 @@ ul{
     font-size: 30px;
     letter-spacing: 5px;
     position: relative;
+    text-shadow:  red -2px 0, cyan 2px 0;
 }
 
 .aside .logo a span{
