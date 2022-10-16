@@ -148,7 +148,6 @@ ul{
 .btn:hover{
     transform: scale(1.05);
 }
-
 .shadow-dark{
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
@@ -577,12 +576,15 @@ h3.my-profession{
     padding: 30px 15px;
     text-align: center;
     transition: all 0.3s ease;
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+    
 }
 
 .service .service-item .service-item-inner:hover{
-    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+    box-shadow:  7px 7px 14px #5a5a5a,
+             -7px -7px 14px var(--skin-color);
 }
-
+/*box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);*/
 .service .service-item .service-item-inner .icon{
     height: 60px;
     width: 60px;
@@ -661,15 +663,20 @@ h3.my-profession{
     margin: 20px auto 0;
 }
 
+.portfolio .portfolio-item-inner:hover{
+    box-shadow:  7px 7px 14px #5a5a5a,
+             -7px -7px 14px var(--skin-color);
+}
+
 .portfolio .portfolio-item-inner .portfolio-img img{
     width: 100%;
     display: block;
 }
 
-.portfolio .portfolio-item-inner p{
+.portfolio .portfolio-item p{
+    text-align: center;
     color: var(--text-black-900);
 }
-.portfolio .portfolio-item-inner p:hover,
 .portfolio .portfolio-item:hover{
     transform: scale(1.05);
     transition: all 1s ease;
