@@ -771,7 +771,7 @@ h3.my-profession{
     padding: 0 50px;
     align-content: center;
 }
-
+/*SCROLLBAR*/
 ::-webkit-scrollbar{
     width: 12px;
 }
@@ -791,7 +791,7 @@ h3.my-profession{
     height: 100%;
     background: var(--skin-color);
 }
-
+/*LODING*/
 .loader .loader-inner{
     position: absolute;
     top: 50%;
@@ -824,7 +824,10 @@ h3.my-profession{
     background: #a99dc5;
     animation-delay: 2s;
 }
-
+/*STYLE INSIDE*/
+.style-switcher .inside{
+    color: var(--text-black-900);
+}
 @keyframes loading {
     0%, 100%{
         transform: translate(0);
